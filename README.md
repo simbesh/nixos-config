@@ -7,9 +7,5 @@ I've got some scripts in here that allow me to quickly rebuild my NixOS config a
 # Required `env.toml`:
 
 ```toml
-# DO NOT COMMIT THIS FILE TO PUBLIC REPO
 
-[wifi]
-ssid =  ""
-password =  ""
 ```

@@ -14,11 +14,8 @@
 in {
   imports = [
     ./de.nix
-    ./hardware.nix
     ./homemanager.nix
     ./nvidia.nix
-    ./services.nix
-    ./webcam.nix
     #./docker.nix
   ];
 
@@ -28,7 +25,7 @@ in {
 
   # NETWORKING
   networking.wireless = {
-    enable = true;
+    enable = false;
     userControlled.enable = true;
     networks = {
       ${envVariables.wifi.ssid} = {
@@ -69,20 +66,8 @@ in {
     # unstable.zed-editor # ironically, terribly slow. Probably just needs better nix support
     # note, jetbrains products via systemPackages don't work. Use toolbox instead
     jetbrains-toolbox
-    gitkraken
     bruno
 
     # SDKs
-    (python311.withPackages (ps:
-      with ps; [
-        numpy # these two are
-        scipy # probably redundant to pandas
-        jupyterlab
-        pandas
-        polars
-        duckdb
-        statsmodels
-        scikitlearn
-      ]))
   ];
 }

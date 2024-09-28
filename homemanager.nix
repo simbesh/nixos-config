@@ -16,18 +16,18 @@ in {
 
     programs.git = {
       enable = true;
-      userName = "Sean Missingham";
-      userEmail = "sean@missingham.net";
+      userName = "Simon Bechard";
+      userEmail = "simon.bechard@gmail.com";
     };
   };
 
-  home-manager.users.smissingham = {
+  home-manager.users.simon = {
     home.stateVersion = "24.05";
 
     programs.git = {
       enable = true;
-      userName = "Sean Missingham";
-      userEmail = "sean@missingham.net";
+      userName = "Simon Bechard";
+      userEmail = "simon.bechard@gmail.com";
     };
   };
 }
