@@ -16,7 +16,7 @@ in {
     ./de.nix
     ./homemanager.nix
     ./nvidia.nix
-    #./docker.nix
+    ./hardware.nix
   ];
 
   # TOP LEVEL CONFIG
