@@ -41,6 +41,7 @@ in {
   programs.dconf.enable = true; # https://github.com/NixOS/nixpkgs/issues/207339#issuecomment-1747101887
 
   environment.systemPackages = with pkgs; [
+    (callPackage ./cursor.nix {})
     # System Utils
     git
     htop
