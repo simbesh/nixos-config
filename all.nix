@@ -17,6 +17,7 @@ in {
     ./homemanager.nix
     ./nvidia.nix
     ./hardware.nix
+    ./drives.nix
   ];
 
   # TOP LEVEL CONFIG
@@ -42,6 +43,8 @@ in {
 
   environment.systemPackages = with pkgs; [
     (callPackage ./cursor.nix {})
+    #pkgs.flameshot
+
     # System Utils
     git
     htop
