@@ -63,6 +63,7 @@ in {
     libreoffice
     obsidian
     google-drive-ocamlfuse
+    novnc
 
     # Developer applications
     git
