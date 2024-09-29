@@ -43,7 +43,6 @@ in {
 
   environment.systemPackages = with pkgs; [
     (callPackage ./cursor.nix {})
-    flameshot
 
     # System Utils
     git
@@ -63,7 +62,6 @@ in {
     libreoffice
     obsidian
     google-drive-ocamlfuse
-    novnc
 
     # Developer applications
     git
