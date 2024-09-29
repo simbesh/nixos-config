@@ -45,12 +45,12 @@ in {
     # ff addon - https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/
     # enable = true;
     # package = pkgs.firefox;
-    nativeMessagingHosts.packages = [pkgs.firefoxpwa];
+    nativeMessagingHosts.packages = [unstable.firefoxpwa];
   };
 
   environment.systemPackages = with pkgs; [
     (callPackage ./cursor.nix {})
-    firefoxpwa # ff addon - https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/
+    unstable.firefoxpwa # ff addon - https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/
 
     # System Utils
     git
