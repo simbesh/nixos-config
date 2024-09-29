@@ -43,7 +43,7 @@ in {
 
   environment.systemPackages = with pkgs; [
     (callPackage ./cursor.nix {})
-    #pkgs.flameshot
+    flameshot
 
     # System Utils
     git
