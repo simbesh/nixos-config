@@ -63,6 +63,7 @@ in {
     obsidian
     google-drive-ocamlfuse
     thunderbird
+    teams-for-linux
 
     # Developer applications
     git
