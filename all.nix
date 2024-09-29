@@ -41,8 +41,16 @@ in {
   programs.firefox.enable = true;
   programs.dconf.enable = true; # https://github.com/NixOS/nixpkgs/issues/207339#issuecomment-1747101887
 
+  programs.firefox = {
+    # ff addon - https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/
+    # enable = true;
+    # package = pkgs.firefox;
+    nativeMessagingHosts.packages = [pkgs.firefoxpwa];
+  };
+
   environment.systemPackages = with pkgs; [
     (callPackage ./cursor.nix {})
+    firefoxpwa # ff addon - https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/
 
     # System Utils
     git
