@@ -62,6 +62,7 @@ in {
     libreoffice
     obsidian
     google-drive-ocamlfuse
+    thunderbird
 
     # Developer applications
     git
