@@ -71,6 +71,7 @@ in {
       google-drive-ocamlfuse
       thunderbird
       teams-for-linux
+      ferdium
 
       # Developer applications
       git
