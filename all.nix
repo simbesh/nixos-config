@@ -81,6 +81,9 @@ in {
       jetbrains-toolbox
       bruno
 
+      #browsers
+      firefox-beta
+
       # SDKs
     ]
     ++ (with unstable; [
