@@ -82,7 +82,7 @@ in {
       bruno
 
       #browsers
-      firefox-beta
+      google-chrome
 
       # SDKs
     ]
