@@ -50,6 +50,7 @@ in {
   environment.systemPackages = with pkgs;
     [
       (callPackage ./cursor.nix {})
+      (callPackage ./sourcegit.nix {})
 
       # System Utils
       git
