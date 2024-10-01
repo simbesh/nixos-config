@@ -17,7 +17,7 @@
 in
   buildDotnetModule rec {
     pname = "sourcegit";
-    version = "8.30.1";
+    version = "8.32";
 
     src = fetchFromGitHub {
       owner = "sourcegit-scm";
