@@ -86,6 +86,8 @@ in {
       google-chrome
 
       # SDKs
+      nodejs_22
+      corepack_22
     ]
     ++ (with unstable; [
       firefoxpwa # ff addon - https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/
