@@ -60,6 +60,7 @@ in {
 
       # Media Apps
       spotify
+      vlc
 
       # Commumincation Apps
       telegram-desktop
